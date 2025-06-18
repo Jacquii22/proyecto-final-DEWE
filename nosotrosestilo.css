@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* Compatibilidad con navegadores antiguos WebKit */
+    -moz-box-sizing: border-box; /* Compatibilidad con navegadores antiguos Mozilla */
+    box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	background-color: black;
+	height: 70px;
+}
+
+.ancho {
+	width: 95%;
+	height: 100px;
+	margin: auto;
+}
+
+.interlineado {
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+
+.logo{
+	width:30%;
+	height:70px;
+	float:left;
+	padding-top:10px;
+}
+.logo p a{
+	color:#fff;
+	font-size:40px;
+	text-decoration:none;
+	font-weight:bold;
+	font-family:raleway;
+}
+
+.navegacion {
+	width: 100%;
+	margin: 30px auto;
+	text-align: right;
+	padding-top: 24px;
+	text-transform: uppercase;/* mayusculas */
+	padding-left: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.navegacion ul {
+	list-style: none;
+}
+
+.menu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a {
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+.menu li a:hover {
+	color: #fff;
+	transition: all 0.2s;
+}
+
+.submenu {
+	position: absolute;
+	background: #f593d3; /* Fondo del menú */
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a {
+	display: block;
+	padding: 15px;
+	color: black; /* Letra del menú */
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	text-align: center;
+}
+
+.menu li:hover .submenu {
+	visibility: visible;
+	opacity: 0.6; /* Visibilidad del menú */
+}
+
+table {
+    width: 450px; /* Ajusta para que se vea equilibrado */
+    margin: auto; /* Centrar la tabla en la página */
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+td {
+    border: 1px solid black;
+    padding: 20px;
+    width: 50%; /* Hace que la celda de abajo ocupe el mismo espacio */
+}
+
+td img {
+    display: block;
+    margin: auto; /* Centrar las imágenes dentro de las celdas */
+}
+

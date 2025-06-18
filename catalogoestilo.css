@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* Compatibilidad con navegadores antiguos WebKit */
+    -moz-box-sizing: border-box; /* Compatibilidad con navegadores antiguos Mozilla */
+    box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	background-color: #e042fc;
+	height: 80px;
+}
+
+.ancho {
+	width: 95%;
+	height: 100px;
+	margin: auto;
+}
+
+.interlineado {
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+.logo{
+	width:30%;
+	height:70px;
+	float:left;
+	padding-top:10px;
+	color:#fff;
+}
+.logo p a{
+	color:#fff;
+	font-size:40px;
+	text-decoration:none;
+	font-weight:bold;
+	font-family:raleway;
+}
+
+.navegacion {
+	width: 100%;
+	margin: 30px auto;
+	text-align: right;
+	padding-top: 24px;
+	text-transform: uppercase;/* mayusculas */
+	padding-left: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color:#fff;
+}
+
+.navegacion ul {
+	list-style: none;
+}
+
+.menu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a {
+	display: block;
+	padding: 15px 20px;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+.menu li a:hover {
+	color: #fff;
+	transition: all 0.2s;
+}
+
+.submenu {
+	position: absolute;
+	background: #ed2de5; /* Fondo del menú */
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a {
+	display: block;
+	padding: 15px;
+	color: white; /* Letra del menú */
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	text-align: center;
+}
+
+.menu li:hover .submenu {
+	visibility: visible;
+	opacity: 0.6; /* Visibilidad del menú */
+}
+
+.tabla {
+	margin: auto; /* Centra la tabla */
+	border-collapse: collapse; /* Une bordes */
+	text-align: center; /* Centra el contenido */
+}
+
+.tabla td {
+	padding: 20px; /* Espacio dentro de las celdas */
+}
